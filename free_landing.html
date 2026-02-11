@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Landind</title>
+
+    <style>
+        body{
+            margin:0px;
+            font-family:serif;
+        }
+        .navi{
+            display:flex;
+        }
+        .navi img{
+            height: 40px;
+            margin-left:20px;
+        }
+        #nav{
+          margin-left:auto;
+          margin-right:30px;
+        }
+        ul{
+            display:flex;
+            list-style-type:none;
+        }
+        ul li{
+            padding-left:10px;
+            color:rgb(86, 86, 86);
+            font-family:sans-serif;
+        }
+        #nav ul li a{
+            text-decoration: none;
+            color:black;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        #nav ul li a:hover{
+            color:purple;
+            transition: 0.4s;
+        }
+        .mid{
+    background-color: #54546d; 
+    height: 300px;
+    justify-content: center;
+}
+ 
+.mid h1{
+    color: white;
+    text-align: center;
+}
+ 
+.img3{
+height: 200px;
+
+position: absolute;
+z-index: 0;
+}
+ 
+.block1{
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    width: 28%;
+    height: 340px;
+    box-shadow: 2px 2px 5px #888888;
+        position: relative;
+}
+.block2{
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    width: 28%;
+    height: 340px;
+    box-shadow: 2px 2px 5px #888888;
+        position: relative;
+        margin-left: 30px;
+}
+ 
+.inner2{
+    background-image: linear-gradient(to right, rgb(43, 64, 130) ,  rgb(118, 145, 234));
+    position: absolute;
+    bottom: 0;
+        width: 100%;
+        display: flex;
+}
+.inner1{
+    background-image: linear-gradient(to right, rgb(14, 147, 80) , rgb(29, 224, 126));
+    position: absolute;
+    bottom: 0;
+        width: 100%;
+       
+}
+#h12 , #p1{
+    color: #54546d;
+ 
+}
+#h12{
+    padding-top: 20px;
+}
+#h22, #p2{
+    color: white;
+}
+ 
+#h122{
+    color: #54546d;
+}
+ 
+#p12{
+    color: #54546d;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+ 
+button{
+    height:40px ;
+    width: 45%;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(164, 57, 214);
+    color: white;
+    box-shadow: 2px 2px 5px #888888;
+   font-weight: bold;
+   margin-top: auto;
+   margin-bottom: auto;
+   margin-top: 30px;
+}
+ .block3{
+    text-align: center;
+ }
+.blockmain{
+ display: flex;
+ width: 100%;
+ z-index: 1;
+ justify-content: center;
+ margin-top: 100px;
+}
+ 
+#pin1{
+    color: white;
+}
+#pin2{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.ininner1{
+justify-content: center;
+text-align: center;
+margin-left: 10px;
+}
+ 
+.ininner2{
+    justify-content: center;
+    text-align: center;
+    margin-right: 10px;
+    }
+.inner2{
+    justify-content: space-between  ;
+}
+ 
+.block3{
+    background-color: white;
+    justify-content: center;
+    border-radius: 10px;
+    width: 28%;
+    height: 340px;
+    box-shadow: 2px 2px 5px #888888;
+        position: relative;
+        margin-left: 30px;
+}.inner3{
+    background-image: linear-gradient(to right, rgb(82, 43, 130) ,  rgb(185, 128, 255));
+    position: absolute;
+    bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+}
+
+.second{
+    margin-top:300px;
+    font-size: 14px;
+}
+.second h2, #tht_second{
+    padding-left:300px;
+margin-left:auto;
+margin-right:auto;
+}
+table {
+            width: 70%;
+            border-collapse: collapse;
+            background: #fff;
+           margin-left:auto;
+           margin-right:auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top:40px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            color: white;
+        }
+        td {
+            text-align: center;
+        }
+        .check {
+            color: green;
+            font-size: 20px;
+        }
+        .cross {
+            color: red;
+            font-size: 20px;
+        }  
+        #red_edno{
+            background-color: #e0e0e0;
+        }
+        .third{
+            margin-bottom: 90px;
+            margin-top:90px;
+            display:flex;
+        }
+        #post_img{
+            margin-top:30px;
+           margin-left:100px;
+        }
+        #tht_third{
+            margin-left:130px;
+        }
+        footer{
+            text-align: center;
+            height:50px;
+            background-color: #54546D;
+        }
+        footer p{
+            padding-top:20px;
+            color:#908FAB;
+        }
+    </style>
+</head>
+<body>
+     <div class="navi">
+        
+         <img src="images/creative-logo.svg" alt="SoftUni_logo">
+        
+        <div id="nav">
+                <ul>
+                    <li><a href="">За нас</a></li>
+                    <li><a href="">Форум</a></li>
+                    <li><a href="">Блог</a></li>
+                    <li><a href="">Контакти</a></li>
+                </ul>
+        </div>
+     </div>
+     <div class="mid">
+        <h1>Такси</h1>
+            <img class="img3" src="images/calculator-icon.svg" alt="">
+            <div class="blockmain">
+                <div class="block1">
+                    <h2 id="h12">Design Basics</h2>
+                    <p id="p1">Подготвителен курс</p>
+                    <button>Кандидатсвай</button>
+                    <div class="inner1">
+                        <h2 id="h22">Безплатно</h2>
+                        <p id="p2">*50лв. такса за приемен изпит</p>
+                    </div>
+     
+                   
+                    </div>
+                <div class="block2">
+                        <h2 id="h122">
+                            Fundamentals Program</h2>
+                            <p id="p12">Курсистите ще продължат обучението си в 6 фундаментални курса, покриващи основните сфери на дизайна и визуализацията.
+                            </p>
+     
+                            <p id="p12">Възможност за заплащане на таксата на 2 равни вноски.</p>
+     
+                            <div class="inner2">
+                                <div class="ininner1">
+                                    <p id="pin2">  
+                                        680 лв.
+                                        </p>
+                                        <p id="pin1">присъствено за 6 курса</p>
+                                </div>
+    <hr>
+                                <div class="ininner2">
+                                    <p id="pin2">
+                                        620 лв.</p>
+                                        <p id="pin1">онлайн за 6 курса</p>
+                                </div>
+                            </div>
+                </div>
+     
+                <div class="block3">
+                    <h2 id="h122">
+                        Professional Program</h2>
+                        <p id="p12">Курсистите преминават към обучение в професионалните модули, специализирайки се в избраното професионално направление.
+                        </p>
+     
+                        <p id="p12">Обявената такса е преференциална за курсистите от Fundamentals Program.
+                            </p>
+     
+                        <div class="inner3">
+                            <div class="ininner1">
+                                <p id="pin2">  
+                                    330 лв.
+                                    </p>
+                                    <p id="pin1">присъствено за модул</p>
+                            </div>
+    <hr>
+                            <div class="ininner2">
+                                <p id="pin2">
+                                    290 лв.</p>
+                                    <p id="pin1">онлайн за модул</p>
+                            </div>
+                        </div>
+            </div>
+    </div>
+    </div>
+          <div class="second">
+              <h2> Присъствено или Онлайн</h2>
+              <p id="tht_second">Формите на обучение в SoftUni Digital са две – присъствена и онлайн, така че обучението е подходящо, както за учещи и работещи, така и <br> за курсисти, живеещи във всяка точка на света. Студентите могат да избират дали желаят да се обучават присъствено или онлайн за <br> всеки отделен модул от учебния план.</p>
+            <div id="table">
+                <table>
+                    <tr id="red_edno">
+                        <td>Присъствие в учебните зали на всички занятия от програмата</td>
+                        <td class="check">✔</td>
+                        <td class="cross">✘</td>
+                    </tr>
+                    <tr >
+                        <td>Възможност за личен контакт с преподаватели и курсистите на живо</td>
+                        <td class="check">✔</td>
+                        <td class="cross">✘</td>
+                    </tr>
+                    <tr id="red_edno">
+                        <td>Онлайн обучение в реално време и възможност за въпроси</td>
+                        <td class="check">✔</td>
+                        <td class="check">✔</td>
+                    </tr>
+                    <tr>
+                        <td>Доживотен достъп до видео записите и учебните ресурси от всички занятия</td>
+                        <td class="check">✔</td>
+                        <td class="check">✔</td>
+                    </tr>
+                    <tr id="red_edno">
+                        <td>Издаване на държавно признати удостоверения от МОН</td>
+                        <td class="check">✔</td>
+                        <td class="check">✔</td>
+                    </tr>
+                    <tr>
+                        <td>Достъп до кариерен център и съдействие за стартиране на работа</td>
+                        <td class="check">✔</td>
+                        <td class="check">✔</td>
+                    </tr>
+                </table>
+            </div>
+          </div>
+          <div class="third">
+             <div id="tht_third">
+                <h2>Финансиране от Пощенска банка</h2>
+             <p>Всички курсисти могат да се възползват от преференциалните условия за потребителски кредит и овърдрафт,<br> за финансиране на своето обучение в СофтУни, като заявят лесно и удобно избрания продукт: <br>
+               <br>
+                При последващ разговор със служител на банката, следва да се уточни, че искането е за кредит за <br>финансиране на обучение в SoftUni и да се предостави студентски номер.
+                www.postbank.bg - при попълване на апликацията, в поле „промоционален код“ трябва да се въведe SoftUni/ <br> СофтУни и при последващ разговор със служител на банката, да се предостави студентски номер.
+                </p>
+             </div>
+                <div>
+                    <img  id="post_img" src="images/postbank-logo.png" alt="post_bank-img">
+                </div>
+          </div>
+
+          <footer>
+           <p>© 2017-2020 SoftUni Creative. All Rights Reserved.</p>
+          </footer>
+</body>
+</html>
